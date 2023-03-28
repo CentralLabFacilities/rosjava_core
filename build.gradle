@@ -15,7 +15,7 @@
  */
 
 buildscript {
-  apply from: "https://github.com/CentralLabFacilities/rosjava_bootstrap/raw/kinetic/buildscript.gradle"
+  apply from: "https://gitlab.ub.uni-bielefeld.de/-/snippets/119/raw/main/script.gradle"
 }
 
 apply plugin: "catkin"
