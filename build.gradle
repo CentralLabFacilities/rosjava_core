@@ -39,9 +39,7 @@ subprojects {
      *   https://github.com/rosjava/rosjava_bootstrap/blob/kinetic/gradle_plugins/src/main/groovy/org/ros/gradle_plugins/RosPlugin.groovy#L31
      */
     apply plugin: "ros-java"
-    apply plugin: "osgi"
     apply plugin: "idea"
-    apply plugin: "eclipse"
   }
 }
 
