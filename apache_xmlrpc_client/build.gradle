@@ -17,5 +17,7 @@
 dependencies {
   implementation project(':apache_xmlrpc_common')
   implementation 'org.apache.ws.commons:ws-commons-util:1.0.1'
+  implementation 'org.ros.rosjava_messages:std_msgs:[0.1,0.6)'
+  implementation 'org.apache.commons:com.springsource.org.apache.commons.httpclient:3.1.0'
 }
 

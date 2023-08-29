@@ -19,6 +19,7 @@ buildscript {
 }
 
 apply plugin: "catkin"
+apply plugin: "maven-publish"
 
 allprojects {
   group 'org.ros.rosjava_core'
@@ -40,7 +41,8 @@ subprojects {
      */
     apply plugin: "ros-java"
     apply plugin: "idea"
+    apply plugin: "maven-publish"
   }
 }
 
-defaultTasks 'publish', 'install'
+defaultTasks 'publish', 'publishToMavenLocal'

@@ -3,4 +3,5 @@ apply plugin: 'java'
 dependencies {
     implementation project(':rosjava')
     implementation 'org.yaml:snakeyaml:[1.17, 1.18)'
+    implementation 'org.apache.commons:com.springsource.org.apache.commons.logging:1.1.1'
 }

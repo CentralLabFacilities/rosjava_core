@@ -15,6 +15,7 @@
  */
 
 apply plugin: 'application'
+apply plugin: 'maven-publish'
 
 mainClassName = 'org.ros.RosRun'
 
@@ -22,5 +23,5 @@ dependencies {
   implementation project(':rosjava')
 }
 
-defaultTasks 'publish', 'install'
+defaultTasks 'publish', 'publishToMavenLocal'
 

@@ -18,7 +18,7 @@ find_package(catkin REQUIRED
     tf2_msgs
 )
 
-catkin_rosjava_setup(publish install)
+catkin_rosjava_setup(publish publishToMavenLocal)
 
 # make sure messages get built first if genjava is enabled
 add_dependencies(gradle-${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
