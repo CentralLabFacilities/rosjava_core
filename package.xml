@@ -5,7 +5,7 @@
   <description>
     An implementation of ROS in pure-Java with Android support.
   </description>
-  <url>http://ros.org/wiki/rosjava_core</url>
+  <url>https://ros.org/wiki/rosjava_core</url>
   <maintainer email="damonkohler@google.com">Damon Kohler</maintainer>
   <license>Apache 2.0</license>
 

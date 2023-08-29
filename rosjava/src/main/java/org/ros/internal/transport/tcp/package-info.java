@@ -5,7 +5,7 @@
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
  * 
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
@@ -19,6 +19,6 @@
  * <p>
  * These classes should _not_ be used directly outside of the org.ros package.
  * 
- * @see <a href="http://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
+ * @see <a href="https://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
  */
 package org.ros.internal.transport.tcp;

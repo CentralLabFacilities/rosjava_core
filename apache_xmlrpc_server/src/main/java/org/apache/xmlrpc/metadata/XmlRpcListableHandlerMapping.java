@@ -7,7 +7,7 @@
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
  *
- *   http://www.apache.org/licenses/LICENSE-2.0
+ *   https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
@@ -25,10 +25,10 @@ import org.apache.xmlrpc.server.XmlRpcHandlerMapping;
 
 /** A listable handler mapping is able to provide support for
  * XML-RPC meta data, as specified 
- * <a href="http://scripts.incutio.com/xmlrpc/introspection.html">
+ * <a href="https://scripts.incutio.com/xmlrpc/introspection.html">
  * here</a>.<br>
  * 
- * @see <a href="http://scripts.incutio.com/xmlrpc/introspection.html">
+ * @see <a href="https://scripts.incutio.com/xmlrpc/introspection.html">
  * Specification of XML-RPC introspection</a>
  */
 public interface XmlRpcListableHandlerMapping extends XmlRpcHandlerMapping {

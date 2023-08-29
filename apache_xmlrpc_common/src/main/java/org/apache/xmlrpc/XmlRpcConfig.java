@@ -7,7 +7,7 @@
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
  *
- *   http://www.apache.org/licenses/LICENSE-2.0
+ *   https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
@@ -31,7 +31,7 @@ public interface XmlRpcConfig {
 	 * interoperable with other XML-RPC implementations.
 	 * Interoperable XML-RPC implementations are those, which
 	 * are compliant to the
-	 * <a href="http://www.xmlrpc.org/spec">XML-RPC Specification</a>.
+	 * <a href="https://www.xmlrpc.org/spec">XML-RPC Specification</a>.
 	 * @return Whether extensions are enabled or not.
 	 */
 	boolean isEnabledForExtensions();

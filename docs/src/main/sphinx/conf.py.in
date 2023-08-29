@@ -28,7 +28,7 @@ needs_sphinx = '1.0'
 extensions = ['sphinx.ext.intersphinx', 'javadoc', 'ros']
 
 intersphinx_mapping = {
-  'android-core': ('http://rosjava.github.io/android_core/latest/', None),
+  'android-core': ('https://rosjava.github.io/android_core/latest/', None),
   }
 
 javadoc_root = 'javadoc'

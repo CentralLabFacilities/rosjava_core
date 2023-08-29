@@ -5,7 +5,7 @@
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
  * 
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
@@ -41,7 +41,7 @@ public class MasterXmlRpcEndpointImplTest {
 
   @Test
   public void testGetUri() throws Exception {
-    URI testUri = new URI("http://foo.bar:8080");
+    URI testUri = new URI("https://foo.bar:8080");
     MasterServer mockMaster = mock(MasterServer.class);
     when(mockMaster.getUri()).thenReturn(testUri);
     MasterXmlRpcEndpointImpl master = new MasterXmlRpcEndpointImpl(mockMaster);
@@ -54,7 +54,7 @@ public class MasterXmlRpcEndpointImplTest {
   public void testLookupNodeExisting() throws Exception {
     MasterServer mockMaster = mock(MasterServer.class);
     final GraphName nodeName = GraphName.of("/foo");
-    final URI nodeSlaveUri = new URI("http://bar");
+    final URI nodeSlaveUri = new URI("https://bar");
     when(mockMaster.lookupNode(eq(nodeName))).thenReturn(nodeSlaveUri);
     MasterXmlRpcEndpointImpl master = new MasterXmlRpcEndpointImpl(mockMaster);
     List<Object> response = master.lookupNode("/caller", nodeName.toString());
@@ -80,7 +80,7 @@ public class MasterXmlRpcEndpointImplTest {
             Matchers.<GraphName>any(), Matchers.<String>any())).thenReturn(
         Lists.<URI>newArrayList());
     MasterXmlRpcEndpointImpl master = new MasterXmlRpcEndpointImpl(mockMaster);
-    List<Object> response = master.registerPublisher("/caller", "/foo", "/bar", "http://baz");
+    List<Object> response = master.registerPublisher("/caller", "/foo", "/bar", "https://baz");
     assertEquals(StatusCode.SUCCESS.toInt(), response.get(0));
     assertEquals(Lists.newArrayList(), response.get(2));
   }
@@ -89,7 +89,7 @@ public class MasterXmlRpcEndpointImplTest {
   public void testRegisterPublisher() throws Exception {
     MasterServer mockMaster = mock(MasterServer.class);
     final GraphName nodeName = GraphName.of("/slave");
-    final URI nodeSlaveUri = new URI("http://api");
+    final URI nodeSlaveUri = new URI("https://api");
     final GraphName topicName = GraphName.of("/topic");
     final String messageType = "/topicType";
     when(
@@ -112,7 +112,7 @@ public class MasterXmlRpcEndpointImplTest {
             Matchers.<GraphName>any(), Matchers.<String>any())).thenReturn(
         Lists.<URI>newArrayList());
     MasterXmlRpcEndpointImpl master = new MasterXmlRpcEndpointImpl(mockMaster);
-    List<Object> response = master.registerSubscriber("/caller", "/foo", "/bar", "http://baz");
+    List<Object> response = master.registerSubscriber("/caller", "/foo", "/bar", "https://baz");
     assertEquals(StatusCode.SUCCESS.toInt(), response.get(0));
     assertEquals(Lists.newArrayList(), response.get(2));
   }
@@ -121,7 +121,7 @@ public class MasterXmlRpcEndpointImplTest {
   public void testRegisterSubscriber() throws Exception {
     MasterServer mockMaster = mock(MasterServer.class);
     final GraphName nodeName = GraphName.of("/slave");
-    final URI nodeSlaveUri = new URI("http://api");
+    final URI nodeSlaveUri = new URI("https://api");
     final GraphName topicName = GraphName.of("/topic");
     final String topicMessageType = "/topicType";
 

@@ -11,10 +11,10 @@ gradle/catkin project and subprojects. You might also wish to read the
 Gradle `Java tutorial`_ for more details about building Java projects with
 Gradle in general.
 
-.. _RosWiki: http://wiki.ros.org/rosjava
-.. _Maven plugin: http://gradle.org/docs/current/userguide/maven_plugin.html
-.. _Application plugin: http://gradle.org/docs/current/userguide/application_plugin.html
-.. _Java tutorial: http://gradle.org/docs/current/userguide/tutorial_java_projects.html
+.. _RosWiki: https://wiki.ros.org/rosjava
+.. _Maven plugin: https://gradle.org/docs/current/userguide/maven_plugin.html
+.. _Application plugin: https://gradle.org/docs/current/userguide/application_plugin.html
+.. _Java tutorial: https://gradle.org/docs/current/userguide/tutorial_java_projects.html
 
 Creating nodes
 --------------
@@ -351,4 +351,4 @@ logging outputs for ROS. ::
 
   node.fatal("message informing user of a fatal occurrence");
 
-.. _Apache Commons Log: http://commons.apache.org/logging/commons-logging-1.1.1/apidocs/index.html
+.. _Apache Commons Log: https://commons.apache.org/logging/commons-logging-1.1.1/apidocs/index.html

@@ -5,7 +5,7 @@
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
  * 
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
@@ -100,7 +100,7 @@ public class TopicIntegrationTest extends RosTest {
    * This is a regression test.
    * 
    * @see <a
-   *      href="http://answers.ros.org/question/3591/rosjava-subscriber-unreliable">bug
+   *      href="https://answers.ros.org/question/3591/rosjava-subscriber-unreliable">bug
    *      report</a>
    * 
    * @throws InterruptedException
@@ -165,7 +165,7 @@ public class TopicIntegrationTest extends RosTest {
             (DefaultSubscriber<std_msgs.String>) connectedNode.<std_msgs.String>newSubscriber(
                 "foo", std_msgs.String._TYPE);
         try {
-          subscriber.addPublisher(PublisherIdentifier.newFromStrings("foo", "http://foo", "foo"),
+          subscriber.addPublisher(PublisherIdentifier.newFromStrings("foo", "https://foo", "foo"),
               new InetSocketAddress(1234));
           fail();
         } catch (RuntimeException e) {

@@ -5,7 +5,7 @@
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
@@ -19,8 +19,8 @@ apply plugin: 'application'
 mainClassName = 'org.ros.RosRun'
 
 dependencies {
-  compile project(':rosjava')
-  compile project(':rosjava_geometry')
+  implementation project(':rosjava')
+  implementation project(':rosjava_geometry')
 
-  compile 'org.ros.rosjava_messages:tf2_msgs:[0.5,0.6)'
+  implementation 'org.ros.rosjava_messages:tf2_msgs:[0.5,0.8)'
 }

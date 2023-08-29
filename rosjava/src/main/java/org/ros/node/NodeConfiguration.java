@@ -5,7 +5,7 @@
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
  * 
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
@@ -47,7 +47,7 @@ import java.util.concurrent.ScheduledExecutorService;
 /**
  * Stores configuration information (e.g. ROS master URI) for {@link Node}s.
  * 
- * @see <a href="http://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
+ * @see <a href="https://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
  *      documentation</a>
  * 
  * @author ethan.rublee@gmail.com (Ethan Rublee)
@@ -63,7 +63,7 @@ public class NodeConfiguration {
 
   static {
     try {
-      DEFAULT_MASTER_URI = new URI("http://localhost:11311/");
+      DEFAULT_MASTER_URI = new URI("https://localhost:11311/");
     } catch (URISyntaxException e) {
       throw new RosRuntimeException(e);
     }
@@ -209,7 +209,7 @@ public class NodeConfiguration {
 
   /**
    * @see <a
-   *      href="http://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_MASTER_URI">ROS_MASTER_URI
+   *      href="https://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_MASTER_URI">ROS_MASTER_URI
    *      documentation</a>
    * @return the {@link URI} of the master that the {@link Node} will register
    *         with
@@ -220,7 +220,7 @@ public class NodeConfiguration {
 
   /**
    * @see <a
-   *      href="http://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_MASTER_URI">ROS_MASTER_URI
+   *      href="https://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_MASTER_URI">ROS_MASTER_URI
    *      documentation</a>
    * @param masterUri
    *          the {@link URI} of the master that the {@link Node} will register
@@ -234,7 +234,7 @@ public class NodeConfiguration {
 
   /**
    * @see <a
-   *      href="http://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_ROOT">ROS_ROOT
+   *      href="https://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_ROOT">ROS_ROOT
    *      documentation</a>
    * @return the location where the ROS core packages are installed
    */
@@ -244,7 +244,7 @@ public class NodeConfiguration {
 
   /**
    * @see <a
-   *      href="http://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_ROOT">ROS_ROOT
+   *      href="https://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_ROOT">ROS_ROOT
    *      documentation</a>
    * @param rosRoot
    *          the location where the ROS core packages are installed
@@ -261,7 +261,7 @@ public class NodeConfiguration {
    * the one that appears in the {@link List} first.
    * 
    * @see <a
-   *      href="http://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_PACKAGE_PATH">ROS_PACKAGE_PATH
+   *      href="https://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_PACKAGE_PATH">ROS_PACKAGE_PATH
    *      documentation</a>
    * @return the {@link List} of paths where the system will look for ROS
    *         packages
@@ -276,7 +276,7 @@ public class NodeConfiguration {
    * the one that appears in the {@link List} first.
    * 
    * @see <a
-   *      href="http://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_PACKAGE_PATH">ROS_PACKAGE_PATH
+   *      href="https://www.ros.org/wiki/ROS/EnvironmentVariables#ROS_PACKAGE_PATH">ROS_PACKAGE_PATH
    *      documentation</a>
    * @param rosPackagePath
    *          the {@link List} of paths where the system will look for ROS
@@ -432,7 +432,7 @@ public class NodeConfiguration {
   }
 
   /**
-   * @see <a href="http://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
+   * @see <a href="https://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
    * 
    * @return the {@link BindAddress} for the {@link Node}'s TCPROS server
    */
@@ -441,7 +441,7 @@ public class NodeConfiguration {
   }
 
   /**
-   * @see <a href="http://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
+   * @see <a href="https://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
    * 
    * @param tcpRosBindAddress
    *          the {@link BindAddress} for the {@link Node}'s TCPROS server
@@ -452,7 +452,7 @@ public class NodeConfiguration {
   }
 
   /**
-   * @see <a href="http://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
+   * @see <a href="https://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
    * 
    * @return the {@link AdvertiseAddressFactory} for the {@link Node}'s TCPROS
    *         server
@@ -462,7 +462,7 @@ public class NodeConfiguration {
   }
 
   /**
-   * @see <a href="http://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
+   * @see <a href="https://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
    * 
    * @param tcpRosAdvertiseAddressFactory
    *          the {@link AdvertiseAddressFactory} for the {@link Node}'s TCPROS
@@ -476,7 +476,7 @@ public class NodeConfiguration {
   }
 
   /**
-   * @see <a href="http://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
+   * @see <a href="https://www.ros.org/wiki/ROS/TCPROS">TCPROS documentation</a>
    * 
    * @return the {@link AdvertiseAddress} for the {@link Node}'s TCPROS server
    */
@@ -485,7 +485,7 @@ public class NodeConfiguration {
   }
 
   /**
-   * @see <a href="http://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
+   * @see <a href="https://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
    *      documentation</a>
    * 
    * @return the {@link BindAddress} for the {@link Node}'s XML-RPC server
@@ -495,7 +495,7 @@ public class NodeConfiguration {
   }
 
   /**
-   * @see <a href="http://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
+   * @see <a href="https://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
    *      documentation</a>
    * 
    * @param xmlRpcBindAddress
@@ -507,7 +507,7 @@ public class NodeConfiguration {
   }
 
   /**
-   * @see <a href="http://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
+   * @see <a href="https://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
    *      documentation</a>
    * 
    * @return the {@link AdvertiseAddress} for the {@link Node}'s XML-RPC server
@@ -517,7 +517,7 @@ public class NodeConfiguration {
   }
 
   /**
-   * @see <a href="http://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
+   * @see <a href="https://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
    *      documentation</a>
    * 
    * @return the {@link AdvertiseAddressFactory} for the {@link Node}'s XML-RPC
@@ -528,7 +528,7 @@ public class NodeConfiguration {
   }
 
   /**
-   * @see <a href="http://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
+   * @see <a href="https://www.ros.org/wiki/ROS/Technical%20Overview#Node">Node
    *      documentation</a>
    * 
    * @param xmlRpcAdvertiseAddressFactory

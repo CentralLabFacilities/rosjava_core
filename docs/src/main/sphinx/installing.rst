@@ -40,5 +40,5 @@ be generating code for your own custom messages, sequencing builds of multiple r
 repositories or using mixed packages, e.g. java + python) then refer to the `RosWiki`_
 for more details.
 
-.. _RosWiki: http://wiki.ros.org/rosjava
+.. _RosWiki: https://wiki.ros.org/rosjava
 

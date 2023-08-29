@@ -1,6 +1,6 @@
 rosjava is the first pure Java implementation of ROS.
 
-From [ROS.org](http://www.ros.org/wiki/): ROS is an open-source, meta-operating
+From [ROS.org](https://www.ros.org/wiki/): ROS is an open-source, meta-operating
 system for your robot. It provides the services you would expect from an
 operating system, including hardware abstraction, low-level device control,
 implementation of commonly-used functionality, message-passing between
@@ -13,26 +13,26 @@ requests on the [issues
 list](https://github.com/rosjava/rosjava/issues?state=open).
 
 To get started, visit the
-[rosjava_core](http://rosjava.github.com/rosjava_core/latest) and
-[android_core](http://rosjava.github.com/android_core/latest) pages for
+[rosjava_core](https://rosjava.github.com/rosjava_core/latest) and
+[android_core](https://rosjava.github.com/android_core/latest) pages for
 documentation concerning the core libraries and examples. Also visit the roswiki
-[rosjava](http://wiki.ros.org/rosjava) and
-[android](http://wiki.ros.org/android) pages for more general rosjava-android
+[rosjava](https://wiki.ros.org/rosjava) and
+[android](https://wiki.ros.org/android) pages for more general rosjava-android
 information.
 
 Still have questions? Check out the ros-users [discussion
 list](https://discourse.ros.org/c/rosjava), post questions to [ROS
-Answers](http://answers.ros.org/questions/) with the tag "rosjava," or join #ROS
+Answers](https://answers.ros.org/questions/) with the tag "rosjava," or join #ROS
 on irc.oftc.net.
 
 rosjava was announced publicly during the [Cloud Robotics tech talk at Google
-I/O 2011](http://www.youtube.com/watch?feature=player_embedded&v=FxXBUp-4800).
+I/O 2011](https://www.youtube.com/watch?feature=player_embedded&v=FxXBUp-4800).
 
 Looking for a robot platform to experiment with ROS, Android, and cloud
-robotics? The [OSRF](http://www.osrfoundation.org/)
-[TurtleBot](http://wiki.ros.org/Robots/TurtleBot) is a great mobile perception
+robotics? The [OSRF](https://www.osrfoundation.org/)
+[TurtleBot](https://wiki.ros.org/Robots/TurtleBot) is a great mobile perception
 platform for [getting started with robotics
-development](http://www.youtube.com/watch?feature=player_embedded&v=MOEjL8JDvd0).
+development](https://www.youtube.com/watch?feature=player_embedded&v=MOEjL8JDvd0).
 
 ### Branches ###
 

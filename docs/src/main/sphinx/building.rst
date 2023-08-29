@@ -44,8 +44,8 @@ deployed alongside other rosjava repositories in a ros environment. Refer to
 the `RosWiki`_ for more information.
 
 
-.. _Gradle: http://www.gradle.org/
-.. _rosmake: http://ros.org/wiki/rosmake/
-.. _Maven: http://maven.apache.org/
-.. _gradle wrapper: http://gradle.org/docs/current/userguide/gradle_wrapper.html
-.. _RosWiki: http://wiki.ros.org/rosjava
+.. _Gradle: https://www.gradle.org/
+.. _rosmake: https://ros.org/wiki/rosmake/
+.. _Maven: https://maven.apache.org/
+.. _gradle wrapper: https://gradle.org/docs/current/userguide/gradle_wrapper.html
+.. _RosWiki: https://wiki.ros.org/rosjava

@@ -5,7 +5,7 @@
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
  * 
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
@@ -33,7 +33,7 @@ public interface Publisher<T> extends TopicParticipant {
 
   /**
    * @see <a
-   *      href="http://www.ros.org/wiki/roscpp/Overview/Publishers%20and%20Subscribers#Publisher_Options">Publisher
+   *      href="https://www.ros.org/wiki/roscpp/Overview/Publishers%20and%20Subscribers#Publisher_Options">Publisher
    *      options documentation</a>
    * @param enabled
    *          {@code true} if published messages should be latched,
@@ -43,7 +43,7 @@ public interface Publisher<T> extends TopicParticipant {
 
   /**
    * @see <a
-   *      href="http://www.ros.org/wiki/roscpp/Overview/Publishers%20and%20Subscribers#Publisher_Options">Publisher
+   *      href="https://www.ros.org/wiki/roscpp/Overview/Publishers%20and%20Subscribers#Publisher_Options">Publisher
    *      options documentation</a>
    * @return {@code true} if published messages will be latched, {@code false}
    *         otherwise

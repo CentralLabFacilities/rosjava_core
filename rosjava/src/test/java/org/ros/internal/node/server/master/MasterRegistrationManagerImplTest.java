@@ -44,7 +44,7 @@ public class MasterRegistrationManagerImplTest {
   @Test
   public void testRegisterOnlyPublisher() throws Exception {
     GraphName nodeName = GraphName.of("/node");
-    URI nodeSlaveUri = new URI("http://localhost:12345");
+    URI nodeSlaveUri = new URI("https://localhost:12345");
     GraphName topicName = GraphName.of("/topic");
     String topicMessageType = "topic/Message";
 
@@ -77,7 +77,7 @@ public class MasterRegistrationManagerImplTest {
   @Test
   public void testRegisterOnlySubscriber() throws Exception {
     GraphName nodeName = GraphName.of("/node");
-    URI nodeSlaveUri = new URI("http://localhost:12345");
+    URI nodeSlaveUri = new URI("https://localhost:12345");
     GraphName topicName = GraphName.of("/topic");
     String topicMessageType = "topic/Message";
 
@@ -111,7 +111,7 @@ public class MasterRegistrationManagerImplTest {
   @Test
   public void testOnlySubscriberWildcard() throws Exception {
     GraphName nodeName = GraphName.of("/node");
-    URI nodeSlaveUri = new URI("http://localhost:12345");
+    URI nodeSlaveUri = new URI("https://localhost:12345");
     GraphName topicName = GraphName.of("/topic");
 
     TopicRegistrationInfo topic =
@@ -147,7 +147,7 @@ public class MasterRegistrationManagerImplTest {
     GraphName topicName = GraphName.of("/topic");
 
     GraphName nodeName1 = GraphName.of("/node1");
-    URI nodeSlaveUri1 = new URI("http://localhost:12345");
+    URI nodeSlaveUri1 = new URI("https://localhost:12345");
     String topicMessageType1 = "topic/Message1";
 
     TopicRegistrationInfo topic1 =
@@ -155,7 +155,7 @@ public class MasterRegistrationManagerImplTest {
             topicMessageType1);
 
     GraphName nodeName2 = GraphName.of("/node2");
-    URI nodeSlaveUri2 = new URI("http://localhost:54321");
+    URI nodeSlaveUri2 = new URI("https://localhost:54321");
     String topicMessageType2 = "topic/Message2";
 
     TopicRegistrationInfo topic2 =
@@ -199,7 +199,7 @@ public class MasterRegistrationManagerImplTest {
     GraphName topicName = GraphName.of("/topic");
 
     GraphName nodeName1 = GraphName.of("/node1");
-    URI nodeSlaveUri1 = new URI("http://localhost:12345");
+    URI nodeSlaveUri1 = new URI("https://localhost:12345");
     String topicMessageType1 = "msgs/Message";
 
     TopicRegistrationInfo topic1 =
@@ -207,7 +207,7 @@ public class MasterRegistrationManagerImplTest {
             topicMessageType1);
 
     GraphName nodeName2 = GraphName.of("/node2");
-    URI nodeSlaveUri2 = new URI("http://localhost:54321");
+    URI nodeSlaveUri2 = new URI("https://localhost:54321");
 
     TopicRegistrationInfo topic2 =
         masterRegistrationManager.registerSubscriber(nodeName2, nodeSlaveUri2, topicName,
@@ -247,7 +247,7 @@ public class MasterRegistrationManagerImplTest {
     GraphName topicName = GraphName.of("/topic");
 
     GraphName nodeNameSubscriber = GraphName.of("/node1");
-    URI nodeSlaveUriSubscriber = new URI("http://localhost:12345");
+    URI nodeSlaveUriSubscriber = new URI("https://localhost:12345");
     String topicMessageTypeSubscriber = "msgs/Message1";
 
     TopicRegistrationInfo topicSubscriber =
@@ -255,7 +255,7 @@ public class MasterRegistrationManagerImplTest {
             topicName, topicMessageTypeSubscriber);
 
     GraphName nodeNamePublisher = GraphName.of("/node2");
-    URI nodeSlaveUriPublisher = new URI("http://localhost:54321");
+    URI nodeSlaveUriPublisher = new URI("https://localhost:54321");
     String topicMessageTypePublisher = "msgs/Message2";
 
     TopicRegistrationInfo topicPublisher =
@@ -297,7 +297,7 @@ public class MasterRegistrationManagerImplTest {
     GraphName topicName = GraphName.of("/topic");
 
     GraphName nodeNamePublisher = GraphName.of("/node2");
-    URI nodeSlaveUriPublisher = new URI("http://localhost:54321");
+    URI nodeSlaveUriPublisher = new URI("https://localhost:54321");
     String topicMessageTypePublisher = "msgs/Message2";
 
     TopicRegistrationInfo topicPublisher =
@@ -305,7 +305,7 @@ public class MasterRegistrationManagerImplTest {
             topicName, topicMessageTypePublisher);
 
     GraphName nodeNameSubscriber = GraphName.of("/node1");
-    URI nodeSlaveUriSubscriber = new URI("http://localhost:12345");
+    URI nodeSlaveUriSubscriber = new URI("https://localhost:12345");
     String topicMessageTypeSubscriber = "msgs/Message1";
 
     TopicRegistrationInfo topicSubscriber =
@@ -347,7 +347,7 @@ public class MasterRegistrationManagerImplTest {
     GraphName topicName = GraphName.of("/topic");
 
     GraphName nodeNamePublisher1 = GraphName.of("/node1");
-    URI nodeSlaveUriPublisher1 = new URI("http://localhost:54321");
+    URI nodeSlaveUriPublisher1 = new URI("https://localhost:54321");
     String topicMessageTypePublisher1 = "msgs/Message1";
 
     TopicRegistrationInfo topicPublisher1 =
@@ -355,7 +355,7 @@ public class MasterRegistrationManagerImplTest {
             topicName, topicMessageTypePublisher1);
 
     GraphName nodeNamePublisher2 = GraphName.of("/node2");
-    URI nodeSlaveUriPublisher2 = new URI("http://localhost:12345");
+    URI nodeSlaveUriPublisher2 = new URI("https://localhost:12345");
     String topicMessageTypePublisher2 = "msgs/Message2";
 
     TopicRegistrationInfo topicPublisher2 =
@@ -400,7 +400,7 @@ public class MasterRegistrationManagerImplTest {
     GraphName nodeName = GraphName.of("/node1");
 
     GraphName topicName1 = GraphName.of("/topic1");
-    URI nodeSlaveUri1 = new URI("http://localhost:54321");
+    URI nodeSlaveUri1 = new URI("https://localhost:54321");
     String topicMessageType1 = "msgs/Message1";
 
     TopicRegistrationInfo topic1 =
@@ -409,7 +409,7 @@ public class MasterRegistrationManagerImplTest {
 
     NodeRegistrationInfo node1 = masterRegistrationManager.getNodeRegistrationInfo(nodeName);
 
-    URI nodeSlaveUri2 = new URI("http://localhost:12345");
+    URI nodeSlaveUri2 = new URI("https://localhost:12345");
     GraphName topicName2 = GraphName.of("/topic2");
     String topicMessageType2 = "msgs/Message2";
 
@@ -447,7 +447,7 @@ public class MasterRegistrationManagerImplTest {
   public void testSinglePublisherRemoved() throws Exception {
     GraphName nodeName = GraphName.of("/node1");
     GraphName topicName = GraphName.of("/topic1");
-    URI nodeSlaveUri = new URI("http://localhost:54321");
+    URI nodeSlaveUri = new URI("https://localhost:54321");
     String topicMessageType = "msgs/Message1";
 
     TopicRegistrationInfo topic =
@@ -471,7 +471,7 @@ public class MasterRegistrationManagerImplTest {
   @Test
   public void testTwoPublishersOneRemoved() throws Exception {
     GraphName nodeName = GraphName.of("/node1");
-    URI nodeSlaveUri = new URI("http://localhost:54321");
+    URI nodeSlaveUri = new URI("https://localhost:54321");
 
     GraphName topicName1 = GraphName.of("/topic1");
     String topicMessageType1 = "msgs/Message1";
@@ -508,7 +508,7 @@ public class MasterRegistrationManagerImplTest {
   public void testSingleSubscriberRemoved() throws Exception {
     GraphName nodeName = GraphName.of("/node1");
     GraphName topicName = GraphName.of("/topic1");
-    URI nodeSlaveUri = new URI("http://localhost:54321");
+    URI nodeSlaveUri = new URI("https://localhost:54321");
     String topicMessageType = "msgs/Message1";
 
     TopicRegistrationInfo topic =
@@ -532,7 +532,7 @@ public class MasterRegistrationManagerImplTest {
   @Test
   public void testTwoSubscribersOneRemoved() throws Exception {
     GraphName nodeName = GraphName.of("/node1");
-    URI nodeSlaveUri = new URI("http://localhost:54321");
+    URI nodeSlaveUri = new URI("https://localhost:54321");
 
     GraphName topicName1 = GraphName.of("/topic1");
     String topicMessageType1 = "msgs/Message1";
@@ -571,7 +571,7 @@ public class MasterRegistrationManagerImplTest {
     GraphName topicName = GraphName.of("/topic");
 
     GraphName nodeName = GraphName.of("/node");
-    URI nodeSlaveUri = new URI("http://localhost:12345");
+    URI nodeSlaveUri = new URI("https://localhost:12345");
     String topicMessageType = "topic/Message";
 
     TopicRegistrationInfo topic1 =
@@ -608,7 +608,7 @@ public class MasterRegistrationManagerImplTest {
     GraphName topicName = GraphName.of("/topic");
 
     GraphName nodeName = GraphName.of("/node");
-    URI nodeSlaveUri = new URI("http://localhost:12345");
+    URI nodeSlaveUri = new URI("https://localhost:12345");
     String topicMessageType = "topic/Message";
 
     TopicRegistrationInfo topic1 =
@@ -644,9 +644,9 @@ public class MasterRegistrationManagerImplTest {
   @Test
   public void testRegisterOnlyService() throws Exception {
     GraphName nodeName = GraphName.of("/node");
-    URI nodeSlaveUri = new URI("http://localhost:12345");
+    URI nodeSlaveUri = new URI("https://localhost:12345");
     GraphName serviceName = GraphName.of("/service");
-    URI serviceUri = new URI("http://foo");
+    URI serviceUri = new URI("https://foo");
 
     ServiceRegistrationInfo service =
         masterRegistrationManager.registerService(nodeName, nodeSlaveUri, serviceName, serviceUri);
@@ -675,9 +675,9 @@ public class MasterRegistrationManagerImplTest {
   @Test
   public void testRegisterUnregisterService() throws Exception {
     GraphName nodeName = GraphName.of("/node");
-    URI nodeSlaveUri = new URI("http://localhost:12345");
+    URI nodeSlaveUri = new URI("https://localhost:12345");
     GraphName serviceName = GraphName.of("/service");
-    URI serviceUri = new URI("http://foo");
+    URI serviceUri = new URI("https://foo");
 
     masterRegistrationManager.registerService(nodeName, nodeSlaveUri, serviceName, serviceUri);
 
@@ -701,9 +701,9 @@ public class MasterRegistrationManagerImplTest {
   @Test
   public void testRegisterUnregisterServiceWithPublisher() throws Exception {
     GraphName nodeName = GraphName.of("/node");
-    URI nodeSlaveUri = new URI("http://localhost:12345");
+    URI nodeSlaveUri = new URI("https://localhost:12345");
     GraphName serviceName = GraphName.of("/service");
-    URI serviceUri = new URI("http://foo");
+    URI serviceUri = new URI("https://foo");
     GraphName topicName = GraphName.of("/topic");
     String topicMessageType = "foo/Bar";
 
@@ -732,13 +732,13 @@ public class MasterRegistrationManagerImplTest {
   @Test
   public void testRegisterServiceReplaceNode() throws Exception {
     GraphName nodeName = GraphName.of("/node");
-    URI nodeSlaveUri1 = new URI("http://localhost:12345");
+    URI nodeSlaveUri1 = new URI("https://localhost:12345");
     GraphName serviceName = GraphName.of("/service");
-    URI serviceUri = new URI("http://foo");
+    URI serviceUri = new URI("https://foo");
     GraphName topicName = GraphName.of("/topic");
     String topicMessageType = "foo/Bar";
 
-    URI nodeSlaveUri2 = new URI("http://localhost:54321");
+    URI nodeSlaveUri2 = new URI("https://localhost:54321");
 
     masterRegistrationManager.registerService(nodeName, nodeSlaveUri1, serviceName, serviceUri);
     masterRegistrationManager.registerPublisher(nodeName, nodeSlaveUri1, topicName,

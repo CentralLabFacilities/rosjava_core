@@ -5,7 +5,7 @@
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
  * 
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
@@ -48,7 +48,7 @@ import java.util.List;
  * individual ROS {@link Node}s to locate one another. Once these {@link Node}s
  * have located each other they communicate with each other peer-to-peer.
  * 
- * @see <a href="http://www.ros.org/wiki/Master">Master documentation</a>
+ * @see <a href="https://www.ros.org/wiki/Master">Master documentation</a>
  * 
  * @author damonkohler@google.com (Damon Kohler)
  * @author khughes@google.com (Keith M. Hughes)
