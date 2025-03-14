@@ -39,6 +39,7 @@ import java.util.Map;
 public class FrameTransformTree {
 
   private static final int TRANSFORM_QUEUE_CAPACITY = 16;
+  private int capacity;
 
   private final Object mutex;
 
@@ -52,6 +53,13 @@ public class FrameTransformTree {
   public FrameTransformTree() {
     mutex = new Object();
     transforms = Maps.newConcurrentMap();
+    capacity = TRANSFORM_QUEUE_CAPACITY;
+  }
+
+  public FrameTransformTree(int queneCapacity) {
+    mutex = new Object();
+    transforms = Maps.newConcurrentMap();
+    capacity = queneCapacity;
   }
 
   /**
@@ -85,7 +93,7 @@ public class FrameTransformTree {
     GraphName relativeSource = source.toRelative();
     if (!transforms.containsKey(relativeSource)) {
       transforms.put(relativeSource, new CircularBlockingDeque<LazyFrameTransform>(
-          TRANSFORM_QUEUE_CAPACITY));
+          capacity));
     }
     synchronized (mutex) {
       transforms.get(relativeSource).addFirst(lazyFrameTransform);
